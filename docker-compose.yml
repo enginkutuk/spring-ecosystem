@@ -1,0 +1,31 @@
+version: '1'
+services:
+  eureka-server:
+    build: ./eureka-discovery-server
+    image: spring-ecosytem/eureka-discovery-server
+    ports:
+      - 8761:8761
+    networks:
+      - my-network
+
+  api-gateway:
+    build: ./api-gateway
+    image: spring-ecosytem/api-gateway
+    ports:
+      - 8090:8090
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+    networks:
+      - my-network
+  hello-service:
+    build: ./hello-service
+    image: spring-ecosytem/hello-service
+    ports:
+      - 80
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+    networks:
+      - my-network
+
+networks:
+  my-network:

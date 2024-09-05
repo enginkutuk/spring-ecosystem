@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: hello-service
+server:
+  port: 0
+eureka:
+  instance: #multiple intance için bu gerekli
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka}
+
