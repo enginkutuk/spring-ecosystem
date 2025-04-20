@@ -10,7 +10,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--        <spring-boot.version>3.3.2</spring-boot.version>-->
-        <spring-cloud.version>2023.0.3</spring-cloud.version>
+        <spring-cloud.version>2024.0.1</spring-cloud.version>
 
     </properties>
 
@@ -18,7 +18,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.3.2</version> <!-- Spring Boot versiyonu -->
+        <version>3.4.4</version> <!-- Spring Boot versiyonu -->
         <relativePath/> <!-- Spring Boot'un varsayılan ayarlarını miras alır -->
     </parent>
 
