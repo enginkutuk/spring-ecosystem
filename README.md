@@ -1,2 +1,3 @@
-# spring-ecosystem
-Spring Ecosystem Project
+### Spring Ecosystem Project
+euraka: http://localhost:8761/
+
