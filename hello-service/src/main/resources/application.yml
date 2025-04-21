@@ -10,3 +10,10 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka}
 
+#swagger
+springdoc:
+  api-docs:
+    path: /v3/api-docs # Bu URL üzerinden, uygulamanızın tüm REST API'lerinin açıklamalarını (endpoints, parametreler, yanıtlar, vs.) JSON formatında alabilirsiniz.
+  swagger-ui:
+    path: /swagger-ui.html # Swagger UI, OpenAPI dokümantasyonunu görsel bir şekilde kullanıcıya sunar. Yani API'leri test etmek, endpoint'lerin parametrelerini görmek ve çağrı yapmak için interaktif bir arayüz sağlar.
+

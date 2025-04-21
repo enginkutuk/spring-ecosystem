@@ -44,12 +44,16 @@
                 <scope>import</scope>
             </dependency>
 
-<!--            <dependency>-->
-<!--                <groupId>com.thoughtworks.xstream</groupId>-->
-<!--                <artifactId>xstream</artifactId>-->
-<!--                <version>1.4.21</version>-->
-<!--            </dependency>-->
 
+            <!-- Swagger (springdoc) versiyonunu burada belirtiyoruz -->
+            <!-- Swagger Spring Boot'un kendi BOM'u (spring-boot-dependencies) içinde yer almaz.-->
+            <!-- Bu nedenle ayrıca eklenmesi gerekir.-->
+            <!-- Biz tüm projede aynı versiyonla ilerlemek için parent da dependency management a ekledik.-->
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>2.3.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

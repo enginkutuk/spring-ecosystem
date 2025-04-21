@@ -30,6 +30,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		Burada versiyon yazmadık. Çünkü versiyonu  parent pom dependencymanagement dan alıyor.
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+		</dependency>
 	</dependencies>
 
 </project>
